@@ -12,7 +12,7 @@ const Navbar = () => {
           <img src="#" className="img-fluid" style="width:30px; margin:-3px 0px 0px 0px;">White Square</span>
         </a> --> */}
 
-        <a className="navbar-brand" href="#"><span className="logo">White Square</span>
+        <a className="navbar-brand" href="#"><span className="logo">Exam Station</span>
           </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"><i className="fas fa-bars" style={{margin:'5px 0px 0px 0px'}}></i></span>
@@ -28,35 +28,31 @@ const Navbar = () => {
                   About
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">Founder</a>
-                  <a className="dropdown-item" href="#">Group at a Glance</a>
-                  <a className="dropdown-item" href="#">Mission & values</a>
-                  <a className="dropdown-item" href="#">Board of Directors</a>
-                  <a className="dropdown-item" href="#">Key Management</a>
+                  <a className="dropdown-item" href="#">Question Setter</a>
+                  <a className="dropdown-item" href="#">Why Exam Station</a>
+                  
                 </div>
               </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Business Portfolio</a>
+              <a className="nav-link" href="#">Topics</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#">Video</a>
             </li>
               <li className="nav-item">
-              <a className="nav-link" href="#">All Brands</a>
+              <a className="nav-link" href="#">Blog</a>
             </li>
        
             <li className="nav-item">
-              <a className="nav-link" href="#">Accrediation</a>
+              <a className="nav-link" href="#">Statistic</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">CSR</a>
+              <a className="nav-link" href="#">Career</a>
             </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">Gallery</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">Career</a>
-            </li>
+           
           </ul>
           <form className="form-inline my-2 my-lg-0">
-            <button className="header-btn my-2 my-sm-0" type="submit">Get a quote</button>
+            <button className="header-btn my-2 my-sm-0" type="submit">Register</button>
           </form>
         </div>
       </nav>
