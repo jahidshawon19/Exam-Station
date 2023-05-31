@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/Home/Home';
 import Main from './layout/Main'; 
 import Register from './components/Register/Register';
+import Login from './components/Login/Login';
 
 
 function App() {
@@ -12,7 +13,11 @@ function App() {
         path:'/register',
         element:<Register></Register>
       },
-       {
+      {
+        path:'/login',
+        element:<Login></Login>
+      },
+      {
             path:'/',
             element:<Main></Main>,
             children:[
@@ -20,9 +25,10 @@ function App() {
                 path:'/',
                 element:<Home></Home>
               },
-             
+
+    
             
-            ],
+            ]
        }
 
       

@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../contexts/UserContext';
 const Navbar = () => {
+  const {user,logOut} = useContext(AuthContext)
+
+  const handleLogOut = ()=>{
+    logOut()
+    .then(()=>{
+
+    })
+    .catch(err=>{
+      console.log(err)
+    })
+  }
     return (
         <>
     <header className="header">
@@ -50,12 +62,26 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="#">Career</a>
             </li>
+          {
+            !user?.email&&<li className="nav-item">
+            <Link className="nav-link" to="/login">Login</Link>
+          </li>
+          }
            
           </ul>
           <form className="form-inline my-2 my-lg-0">
-            <Link to="/register">
-            <button className="header-btn my-2 my-sm-0" type="submit">Register</button>
-            </Link>
+
+            {
+              user?.email?<button onClick={handleLogOut} className="btn my-2 my-sm-0 btn-danger" type="submit">Logout</button>
+              :
+
+              <Link to="/register">
+              <button className="header-btn my-2 my-sm-0" type="submit">Register</button>
+              </Link>
+
+            }
+            
+            
           </form>
         </div>
       </nav>
