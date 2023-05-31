@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <>
@@ -12,8 +13,8 @@ const Navbar = () => {
           <img src="#" className="img-fluid" style="width:30px; margin:-3px 0px 0px 0px;">White Square</span>
         </a> --> */}
 
-        <a className="navbar-brand" href="#"><span className="logo">Exam Station</span>
-          </a>
+        <Link className="navbar-brand" to="/"><span className="logo">Exam Station</span>
+          </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"><i className="fas fa-bars" style={{margin:'5px 0px 0px 0px'}}></i></span>
         </button>
@@ -21,7 +22,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">Home</a>
+              <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -52,7 +53,9 @@ const Navbar = () => {
            
           </ul>
           <form className="form-inline my-2 my-lg-0">
+            <Link to="/register">
             <button className="header-btn my-2 my-sm-0" type="submit">Register</button>
+            </Link>
           </form>
         </div>
       </nav>

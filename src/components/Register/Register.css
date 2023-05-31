@@ -1,0 +1,86 @@
+.bg-img{
+background: url('https://images.pexels.com/photos/1557251/pexels-photo-1557251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') top left repeat;
+background-size: auto;
+background-size: cover;
+z-index: 999;
+min-height: 100vh;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+}
+
+.bg-img .info .animated-text h1{
+font-size: 60px;
+color: #fff;
+font-weight: 700;
+margin-bottom: 30px;
+text-transform: uppercase;
+}
+
+.info .animated-text h1{
+display: block;
+text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+background: url('./asset/loginText.png') repeat-y;
+  background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-animation: aitf 80s linear infinite;
+-webkit-transform: translate3d(0, 0, 0);
+-webkit-backface-visibility: hidden;
+}
+.info p{
+margin-bottom: 0;
+color: #fff;
+opacity: 0.9;
+line-height: 28px;
+}
+
+
+.form-section{
+min-height: 100vh;
+position: relative;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 15px;
+background: #e5e9e9;
+}
+
+.form-inner{
+max-width: 500px;
+width: 100%
+}
+.form-control{
+padding: 11px 20px 9px;
+font-size: 16px;
+outline: none;
+height: 50px;
+color: #535353;
+border-radius: 3px;
+font-weight: 500;
+border: 1px solid transparent;
+background: #fff;
+}
+
+.register-btn{
+position: relative;
+display: inline-block;
+border: none;
+outline: none !important;
+color: #ffffff;
+text-transform: capitalize;
+transition: all 0.3s linear;
+z-index: 1;
+overflow: hidden;
+cursor: pointer;
+font-size: 17px;
+font-weight: 400;
+font-family: 'Jost', sans-serif;
+border-radius: 3px;
+width: 100%;
+padding: 0 50px;
+line-height: 50px;
+}

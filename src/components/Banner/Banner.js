@@ -11,7 +11,7 @@ const Banner = () => {
                         <div className="banner-con text-center">
                             <p className="first-title mt-5">Free Online Quizzes for IT Job</p>
                             <p className="banner-des mt-3">Bank (IT), Ministry, Power Sector, Gas Sector</p>
-                            <a href="#" target="_blank" className="banner-btn mt-3">Take Exam</a>
+                            <a href="/" target="_blank" className="banner-btn mt-3">Take Exam</a>
                         </div>
                     </div>
                 </div>
